@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kenmarehalf.ie/sitemap.xml
