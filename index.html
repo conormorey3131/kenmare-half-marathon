@@ -184,7 +184,7 @@
       <a href="#race-day">Race Day</a>
       <a href="#kenmare">Kenmare</a>
       <a href="#faq">FAQ</a>
-      <a class="btn" href="#enter">Enter</a>
+      <a class="btn" href="https://in.njuko.com/kenmare-half-marathon-20271794554849916?currentPage=select-competition" target="_blank" rel="noopener">Enter</a>
     </nav>
   </div>
 </header>
@@ -336,7 +336,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q">When can I enter?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Entries open on 20 November 2026 at 9am. Registration is through Njuko and the entry link will be published here. Early-bird entry saves €5 until 30 November 2026.</p></div>
+        <div class="faq-a"><p>Entries are now open. Registration is through Njuko — <a href="https://in.njuko.com/kenmare-half-marathon-20271794554849916?currentPage=select-competition" target="_blank" rel="noopener">enter here</a>. Early-bird entry saves €5 until 30 November 2026.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">How much is entry?<span class="plus">+</span></button>
@@ -378,22 +378,8 @@
   <div class="wrap">
     <p class="script">17 April 2027 · Make it a date</p>
     <h2 class="big">See you on the start line.</h2>
-    <p>Half Marathon. 10K. 5K. Choose your distance and make a weekend of it. Entries open 20 November 2026 at 9am. Save €5 before 1 December. Limited places available.</p>
-    <div class="countdown" id="countdown" aria-label="Countdown to entries opening">
-      <div class="cd"><div class="n" id="cd-d">–</div><div class="u">Days</div></div>
-      <div class="cd"><div class="n" id="cd-h">–</div><div class="u">Hours</div></div>
-      <div class="cd"><div class="n" id="cd-m">–</div><div class="u">Minutes</div></div>
-      <div class="cd"><div class="n" id="cd-s">–</div><div class="u">Seconds</div></div>
-    </div>
-    <form class="interest" id="interest-form">
-      <label for="interest-email">Join the interest list</label>
-      <div class="row">
-        <input type="email" id="interest-email" name="email" placeholder="Your email address" required autocomplete="email">
-        <button type="submit" class="btn black">Notify me</button>
-      </div>
-      <p class="note">Entries open 20 November 2026 at 9am. We will only email you about Kenmare Half Marathon entries.</p>
-    </form>
-    <p class="interest-done" id="interest-done" hidden>You're on the list. We will email you when entries open on 20 November.</p>
+    <p>Half Marathon. 10K. 5K. Choose your distance and make a weekend of it. Entries are now open. Save €5 before 1 December. Limited places available.</p>
+    <div style="margin:34px 0 26px"><a class="btn black" href="https://in.njuko.com/kenmare-half-marathon-20271794554849916?currentPage=select-competition" target="_blank" rel="noopener">Enter now</a></div>
     <a class="btn black" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Kenmare%20Half%20Marathon&amp;dates=20270417T070000Z/20270417T110000Z&amp;details=Kenmare%20Half%20Marathon%2C%2010K%20and%205K%20—%20starting%20on%20Henry%20Street%2C%20Kenmare%2C%20Co.%20Kerry." target="_blank" rel="noopener">Add to calendar</a>
   </div>
 </section>
@@ -415,7 +401,7 @@
       </div>
       <div>
         <p><strong>Entries</strong></p>
-        <p>Open 20 November 2026, 9am</p>
+        <p>Entries open now</p>
         <p>Registration through Njuko</p>
       </div>
     </div>
@@ -435,22 +421,6 @@
       btn.querySelector('.plus').textContent = open ? '−' : '+';
     });
   });
-  // Countdown to entries opening: 20 Nov 2026 09:00 Irish time (GMT in November, so 09:00 UTC)
-  var target = new Date('2026-11-20T09:00:00Z').getTime();
-  function tick(){
-    var diff = target - Date.now();
-    if (diff <= 0) {
-      document.getElementById('countdown').innerHTML = '<p style="font-weight:800;text-transform:uppercase;font-style:italic">Entries are open.</p>';
-      return;
-    }
-    var d = Math.floor(diff/86400000), h = Math.floor(diff/3600000)%24, m = Math.floor(diff/60000)%60, s = Math.floor(diff/1000)%60;
-    document.getElementById('cd-d').textContent = d;
-    document.getElementById('cd-h').textContent = h;
-    document.getElementById('cd-m').textContent = m;
-    document.getElementById('cd-s').textContent = s;
-    setTimeout(tick, 1000);
-  }
-  tick();
 </script>
 
 <!-- Customer.io Data In (JavaScript source, EU) -->
@@ -472,7 +442,7 @@
 </script>
 <script>
   // Customer.io: record clicks on the Enter calls to action
-  document.querySelectorAll('a[href="#enter"]').forEach(function(a){
+  document.querySelectorAll('a[href="https://in.njuko.com/kenmare-half-marathon-20271794554849916?currentPage=select-competition"]').forEach(function(a){
     a.addEventListener('click', function(){
       if (window.cioanalytics) cioanalytics.track('Entry Clicked', { link_text: a.textContent.trim() });
     });
